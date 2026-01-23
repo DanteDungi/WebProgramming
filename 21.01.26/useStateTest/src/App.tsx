@@ -81,11 +81,11 @@ function App() {
                     <p className="text-white text-5xl font-bold">{`\n ${questions[questionIndex].text}`}</p>
                     <div className="flex justify-evenly w-screen">
                         {questions[questionIndex].answers.map((answer, index) => (
-                    <button
-                        key={index}
-                        onClick={SwitchQuestion}
-                        className="w-85 h-45 p-3 rounded-xl border-4 border-white bg-indigo-800 text-white text-2xl font-bold"
-                    >{answer}</button>))}
+                            <button
+                                key={index}
+                                onClick={SwitchQuestion}
+                                className="w-85 h-45 p-3 rounded-xl border-4 border-white bg-indigo-800 text-white text-2xl font-bold"
+                            >{answer}</button>))}
                     </div>
                 </div>
             )}
