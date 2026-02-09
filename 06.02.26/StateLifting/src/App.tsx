@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import InputComponent from './components/InputComponent';
 import ResultComponent from './components/ResultComponent';
-import "tailwindcss";
 import './App.css';
 
 function App() {
@@ -30,13 +29,13 @@ function App() {
     }
     
     return(
-        <div className="flex flex-col justify-center items-center h-screen bg-white">
-            <h1 className="text-center text-yellow-400 font-bold">Calculator</h1>
+        <div className="flex flex-col justify-center items-center h-screen">
+        <h1 className="text-5xl text-center text-yellow-400 font-bold mb-35">Calculator</h1>
 
-            <div className="">
+            <div className="flex justify-evenly w-screen">
                 <InputComponent setValue={setFirstValue}/>
                 <select 
-                    className=""
+                    className="text-yellow-400 text-white font-bold text-2xl"
                     onChange={(event) => setOperation(event.target.value)}
                 >
                     <option value="+">+</option>
